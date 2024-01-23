@@ -21,8 +21,8 @@ A step by step series of examples that tell you how to get a development environ
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/AnatoliiTymoshchuk17/Fivetran
+   cd Fivetran
    ```
 
 2. **Setup Virtual Environment (Optional)**
