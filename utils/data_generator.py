@@ -41,9 +41,9 @@ def generate_user_data():
     :return: A dictionary with user data.
     """
     return {
-        'username': generate_random_string(8),
-        'age': generate_random_int(18, 70),
-        'join_date': generate_random_date()
+        'id': generate_random_int(18, 70),
+        'name': generate_random_string(10),
+        'age': generate_random_int(18, 70)
     }
 
 

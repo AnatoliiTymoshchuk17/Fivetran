@@ -10,9 +10,9 @@ def db_connection():
     db_config = {
         "host": "localhost",
         "port": "5432",
-        "user": "your_username",
-        "password": "your_password",
-        "dbname": "your_dbname"
+        "user": "postgres",
+        "password": "postgres",
+        "dbname": "bot_db"
     }
     db = Database(db_config)
     yield db
