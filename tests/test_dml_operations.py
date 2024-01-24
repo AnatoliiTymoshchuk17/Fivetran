@@ -1,4 +1,4 @@
-from utils import generate_user_data
+from tests.utils import generate_user_data
 
 
 def test_insert_user(db_connection):
