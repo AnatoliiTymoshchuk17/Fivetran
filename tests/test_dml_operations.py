@@ -1,4 +1,21 @@
-from tests.utils import generate_user_data
+import pytest
+
+from utils.data_generator import generate_user_data
+
+
+@pytest.fixture(autouse=True)
+def setup_method(db_connection):
+    """
+    Create the 'users' table if it doesn't exist.
+    """
+    create_table_query = """
+    CREATE TABLE IF NOT EXISTS users (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255),
+        age INT
+    );
+    """
+    db_connection.execute_query(create_table_query)
 
 
 def test_insert_user(db_connection):

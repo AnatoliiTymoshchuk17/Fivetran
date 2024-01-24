@@ -1,5 +1,5 @@
 import pytest
-from tests.utils import Database
+from utils.database import Database
 
 
 @pytest.fixture(scope="module")
